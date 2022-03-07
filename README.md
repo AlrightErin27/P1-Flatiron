@@ -1,4 +1,4 @@
-##P1-Flatiron: Project 1, Flatiron School Software Engineering Live
+P1-Flatiron: Project 1, Flatiron School Software Engineering Live
 
 ### Creators: Jose Escobedo & Erin Van Brunt
 
