@@ -3,3 +3,7 @@ body {
   background-color: rgba(149, 195, 82, 0.469);
   text-align: center;
 }
+#imgRandom {
+  width: 250px;
+  height: 250px;
+}
