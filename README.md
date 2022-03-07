@@ -1,4 +1,4 @@
-##P1-Flatiron: Project 1, Flatiron School Software Engineering Live
+P1-Flatiron: Project 1, Flatiron School Software Engineering Live
 
 ### Creators: Jose Escobedo & Erin Van Brunt
 
@@ -19,6 +19,7 @@
 - Let user log in & save their profile and info from the Friend List section using POST & PATCH.
 - Extra CSS styling.
 - Nav bar and routes to features as separate pages.
+- Create a loop that translates all comments into "dog language."
 
 ### Wire Frames:
 
