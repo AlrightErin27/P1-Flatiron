@@ -1,16 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Reading loud and clear! 📻");
+  //console.log("Reading loud and clear! 📻");
 
-  //fetch from Dog API (https://dog.ceo/dog-api/?ref=apilist.fun)
-  const dogAPI = "https://dog.ceo/api/breeds/image/random";
-  fetch(dogAPI)
-    .then((res) => res.json())
-    .catch((err) => console.log("ERROR️‍🔥:", err));
+  const imgRandom = document.querySelector("#imgRandom");
 
-  function renderDogs(dogsArray) {
-    dogsArray.forEach(displayDog);
+  function getRandomImg() {
+    const dogAPI = "https://dog.ceo/api/breeds/image/random";
+
+    fetch(dogAPI)
+      .then((res) => res.json())
+      .then(function (json) {
+        console.log(json);
+        const imageUrl = json.message;
+        imgRandom.src = imageUrl;
+      })
+      .catch((err) => console.log("ERROR️‍🔥:", err));
   }
-  function displayDog(dog) {
-    let img = document.createElement("img");
-  }
+  getRandomImg();
 });
