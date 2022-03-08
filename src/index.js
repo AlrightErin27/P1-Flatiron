@@ -68,7 +68,11 @@ function displayDog(dog) {
   localDogImg.alt = dog.image;
   localDogImg.setAttribute("class", "localDogPics");
 
+  const localDogName = document.createElement("h3");
+  localDogName.innerHTML = dog.name;
+
   userProfileDiv.append(localDogImg);
+  userProfileDiv.append(localDogName);
 }
 
 //create form to input user's info
