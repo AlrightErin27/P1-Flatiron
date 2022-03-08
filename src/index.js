@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //console.log("Reading loud and clear! 📻");
 
   //--------------GOODEST DOG SECTION----------------------//
+  //grabbing html el to add pic to later
   const imgRandom = document.querySelector("#imgRandom");
   const dogNameArr = [
     "Toby",
@@ -18,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "Max",
     "Bob Barker",
   ];
+  //code to pick randomly from above array
   const randomDogName =
     dogNameArr[Math.floor(Math.random() * dogNameArr.length)];
-  //console.log(randomDogName);
 
   //add random dog name to text on page
   document.querySelector(
@@ -39,6 +40,5 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch((err) => console.log("ERROR️‍🔥:", err));
   }
   getRandomImg();
-
   //-----------------------------------------------------//
 });
