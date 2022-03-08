@@ -39,4 +39,5 @@ function getRandomImgDay() {
     .catch((err) => console.log("ERROR️‍🔥:", err));
 }
 getRandomImgDay();
-/* //--------------🦴 🦴 🦴 User Profile Section 🦴 🦴 🦴--------------// */
+//--------------🦴 🦴 🦴 User Profile Section 🦴 🦴 🦴--------------//
+//--------------🦴 🦴 🦴 Friends Section 🦴 🦴 🦴--------------//
