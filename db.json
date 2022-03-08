@@ -1,4 +1,3 @@
-
 {
   "dogs": [
     {
@@ -6,6 +5,7 @@
       "name": "Fido",
       "breed": "German Shepard",
       "image": "src/imgs/dog1.jpg",
+      "caption": "",
       "comment": "",
       "likes": 2
     },
@@ -14,6 +14,7 @@
       "name": "Lucky",
       "breed": "Golden Retriever",
       "image": "src/imgs/dog2.jpg",
+      "caption": "Selfie time!",
       "comment": "",
       "likes": 0
     },
@@ -22,6 +23,7 @@
       "name": "Leo",
       "breed": "Chow Chow",
       "image": "src/imgs/dog3.jpg",
+      "caption": "Ruff day",
       "comment": "",
       "likes": 11
     },
@@ -30,6 +32,7 @@
       "name": "Rocko",
       "breed": "Pomeranian",
       "image": "src/imgs/dog4.jpg",
+      "caption": "Keeping fit!",
       "comment": "",
       "likes": 2
     },
@@ -38,9 +41,9 @@
       "name": "Honey",
       "breed": "Miniature Dachshund",
       "image": "src/imgs/dog5.jpg",
+      "caption": "Just chilling with my favorite toy.",
       "comment": "",
       "likes": 100
     }
   ]
 }
-

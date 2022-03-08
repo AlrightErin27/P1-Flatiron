@@ -29,13 +29,17 @@ body {
 }
 
 /* //--------------🦴 🦴 🦴 User Profile Section 🦴 🦴 🦴--------------// */
+#userProfileDiv {
+  background-color: green;
+}
+
+/* //--------------🦴 🦴 🦴 Friends Section 🦴 🦴 🦴--------------// */
 .localDogPics {
   width: 250px;
   height: 200px;
   border-radius: 20px;
   margin-bottom: 20px;
 }
-/* //--------------🦴 🦴 🦴 Friends Section 🦴 🦴 🦴--------------// */
 /* .imgCard {
   height: 60vh;
   width: 250px;

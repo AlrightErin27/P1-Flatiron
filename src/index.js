@@ -51,13 +51,16 @@ getRandomImgDay();
 //--------------🦴 🦴 🦴 User Profile Section 🦴 🦴 🦴--------------//
 //get info from local API file db.json
 const localDogAPI = "http://localhost:3000/dogs";
-const userProfileDiv = document.querySelector("#userProfileDiv");
+const userProfileDiv = document.querySelector("#friendsDiv");
 
 fetch(localDogAPI)
   .then((res) => res.json())
   .then(renderLocalDogs)
   .catch((error) => console.log("😬", error));
 
+//create form to input user's info
+
+//--------------🦴 🦴 🦴 Friends Section 🦴 🦴 🦴--------------//
 //fxn to render dogs from local db
 function renderLocalDogs(dogs) {
   dogs.forEach(displayDog);
@@ -71,10 +74,6 @@ function displayDog(dog) {
   const localDogName = document.createElement("h3");
   localDogName.innerHTML = dog.name;
 
-  userProfileDiv.append(localDogImg);
-  userProfileDiv.append(localDogName);
+  friendsDiv.append(localDogImg);
+  friendsDiv.append(localDogName);
 }
-
-//create form to input user's info
-
-//--------------🦴 🦴 🦴 Friends Section 🦴 🦴 🦴--------------//
