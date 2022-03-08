@@ -1,0 +1,39 @@
+{
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Fido",
+      "breed": "German Shepard",
+      "image": "src/imgs/dog1.jpg",
+      "comment": ""
+    },
+    {
+      "id": 2,
+      "name": "Lucky",
+      "breed": "Golden Retriever",
+      "image": "src/imgs/dog2.jpg",
+      "comment": ""
+    },
+    {
+      "id": 3,
+      "name": "Leo",
+      "breed": "Chow Chow",
+      "image": "src/imgs/dog3.jpg",
+      "comment": ""
+    },
+    {
+      "id": 4,
+      "name": "Rocko",
+      "breed": "Pomeranian",
+      "image": "src/imgs/dog4.jpg",
+      "comment": ""
+    },
+    {
+      "id": 5,
+      "name": "Honey",
+      "breed": "Miniature Dachshund",
+      "image": "src/imgs/dog5.jpg",
+      "comment": ""
+    }
+  ]
+}
