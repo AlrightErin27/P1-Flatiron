@@ -1,44 +1,42 @@
-document.addEventListener("DOMContentLoaded", () => {
-  //console.log("Reading loud and clear! 📻");
+//--------------🦴 🦴 🦴 Goodest Dog of the Day Section 🦴 🦴 🦴--------------//
+//create var for html el to insert random pic from dog API into
+const imgRandom = document.querySelector("#imgRandom");
 
-  //--------------GOODEST DOG SECTION----------------------//
-  //grabbing html el to add pic to later
-  const imgRandom = document.querySelector("#imgRandom");
-  const dogNameArr = [
-    "Toby",
-    "Oprah",
-    "Axel",
-    "Pumpkin",
-    "Grandpa",
-    "Roscoe",
-    "Kelly",
-    "Luna",
-    "Bella",
-    "Bandit",
-    "Smokey",
-    "Max",
-    "Bob Barker",
-  ];
-  //code to pick randomly from above array
-  const randomDogName =
-    dogNameArr[Math.floor(Math.random() * dogNameArr.length)];
+//array of dog names that can be dog of the day
+const dogNameArr = [
+  "Toby",
+  "Oprah",
+  "Axel",
+  "Pumpkin",
+  "Grandpa",
+  "Roscoe",
+  "Kelly",
+  "Luna",
+  "Bella",
+  "Bandit",
+  "Smokey",
+  "Max",
+  "Bob Barker",
+];
 
-  //add random dog name to text on page
-  document.querySelector(
-    "#random-dog-name"
-  ).innerHTML = `${randomDogName} is the GOODEST DOG OF THE DAY!!!`;
+//var where random generated dog name is stored
+const randomDogName = dogNameArr[Math.floor(Math.random() * dogNameArr.length)];
 
-  function getRandomImg() {
-    const dogAPI = "https://dog.ceo/api/breeds/image/random";
-    fetch(dogAPI)
-      .then((res) => res.json())
-      .then(function (json) {
-        //console.log(json);
-        const imageUrl = json.message;
-        imgRandom.src = imageUrl;
-      })
-      .catch((err) => console.log("ERROR️‍🔥:", err));
-  }
-  getRandomImg();
-  //-----------------------------------------------------//
-});
+//add random dog name to text on page in caps
+document.querySelector(
+  "#randomDogName"
+).innerHTML = `${randomDogName.toUpperCase()} is today's Goodest Dog!`;
+
+//fetch from dog.ceo dog API to grab random photo to insert into HTML
+function getRandomImgDay() {
+  const dogAPI = "https://dog.ceo/api/breeds/image/random";
+  fetch(dogAPI)
+    .then((res) => res.json())
+    .then(function (json) {
+      const imageUrl = json.message;
+      imgRandom.src = imageUrl;
+    })
+    .catch((err) => console.log("ERROR️‍🔥:", err));
+}
+getRandomImgDay();
+/* //--------------🦴 🦴 🦴 User Profile Section 🦴 🦴 🦴--------------// */
