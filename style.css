@@ -29,6 +29,12 @@ body {
 }
 
 /* //--------------🦴 🦴 🦴 User Profile Section 🦴 🦴 🦴--------------// */
+.localDogPics {
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
 /* //--------------🦴 🦴 🦴 Friends Section 🦴 🦴 🦴--------------// */
 /* .imgCard {
   height: 60vh;
