@@ -1,7 +1,6 @@
 body {
   background-color: rgba(82, 125, 195, 0.26);
 }
-
 #appTitle {
   font-family: "Lato", sans-serif;
   font-size: 4rem;
@@ -19,6 +18,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+#newsGif {
+  height: 5rem;
+}
 #imgRandom {
   width: 250px;
   height: 200px;
@@ -27,6 +29,13 @@ body {
 }
 
 /* //--------------🦴 🦴 🦴 User Profile Section 🦴 🦴 🦴--------------// */
+.localDogPics {
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+/* //--------------🦴 🦴 🦴 Friends Section 🦴 🦴 🦴--------------// */
 /* .imgCard {
   height: 60vh;
   width: 250px;

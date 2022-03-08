@@ -17,6 +17,15 @@ const dogNameArr = [
   "Smokey",
   "Max",
   "Bob Barker",
+  "Pup Tart",
+  "Ricky Bobby",
+  "Chew-Barka",
+  "Bark Twain",
+  "White Castle",
+  "Homer",
+  "Kimmy",
+  "Grits",
+  "Lady",
 ];
 
 //var where random generated dog name is stored
@@ -39,4 +48,33 @@ function getRandomImgDay() {
     .catch((err) => console.log("ERROR️‍🔥:", err));
 }
 getRandomImgDay();
-/* //--------------🦴 🦴 🦴 User Profile Section 🦴 🦴 🦴--------------// */
+//--------------🦴 🦴 🦴 User Profile Section 🦴 🦴 🦴--------------//
+//get info from local API file db.json
+const localDogAPI = "http://localhost:3000/dogs";
+const userProfileDiv = document.querySelector("#userProfileDiv");
+
+fetch(localDogAPI)
+  .then((res) => res.json())
+  .then(renderLocalDogs)
+  .catch((error) => console.log("😬", error));
+
+//fxn to render dogs from local db
+function renderLocalDogs(dogs) {
+  dogs.forEach(displayDog);
+}
+function displayDog(dog) {
+  const localDogImg = document.createElement("img");
+  localDogImg.src = dog.image;
+  localDogImg.alt = dog.image;
+  localDogImg.setAttribute("class", "localDogPics");
+
+  const localDogName = document.createElement("h3");
+  localDogName.innerHTML = dog.name;
+
+  userProfileDiv.append(localDogImg);
+  userProfileDiv.append(localDogName);
+}
+
+//create form to input user's info
+
+//--------------🦴 🦴 🦴 Friends Section 🦴 🦴 🦴--------------//
