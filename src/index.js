@@ -66,14 +66,34 @@ function renderLocalDogs(dogs) {
   dogs.forEach(displayDog);
 }
 function displayDog(dog) {
+  //creating individual local dog cards
+  const localDogCard = document.createElement("div");
+  localDogCard.setAttribute("id", `${dog.id}`);
+  localDogCard.setAttribute("class", "localDogCard");
+  //adding local dog image
   const localDogImg = document.createElement("img");
   localDogImg.src = dog.image;
   localDogImg.alt = dog.image;
   localDogImg.setAttribute("class", "localDogPics");
-
+  //adding local dog captions
+  const localDogCaption = document.createElement("p");
+  localDogCaption.innerHTML = dog.caption;
+  //adding local dog name
   const localDogName = document.createElement("h3");
   localDogName.innerHTML = dog.name;
+  //adding dog breed
+  const localDogBreed = document.createElement("p");
+  localDogBreed.innerHTML = dog.breed;
+  //adding local dog likes
+  const localDogLikes = document.createElement("button");
+  localDogLikes.innerHTML = `Likes: ${dog.likes}`;
 
-  friendsDiv.append(localDogImg);
-  friendsDiv.append(localDogName);
+  friendsDiv.append(localDogCard);
+  localDogCard.append(
+    localDogImg,
+    localDogCaption,
+    localDogName,
+    localDogBreed,
+    localDogLikes
+  );
 }

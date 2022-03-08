@@ -34,6 +34,14 @@ body {
 }
 
 /* //--------------🦴 🦴 🦴 Friends Section 🦴 🦴 🦴--------------// */
+#friendsDiv {
+  outline: 3px green solid;
+}
+.localDogCard {
+  background-color: white;
+  outline: 3px yellow solid;
+  margin: 4rem;
+}
 .localDogPics {
   width: 250px;
   height: 200px;
