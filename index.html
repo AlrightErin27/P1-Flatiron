@@ -15,34 +15,65 @@
     <script defer type="text/javascript" src="src/index.js"></script>
   </head>
   <body>
-
-    <div class="headerContainer">
-      <h1 id="headerBark">Bark</h1>
-      <h2 id="dogOfDay">Goodest Dog of the Day</h2>
+    <h1 id="appTitle">Bark ©</h1>
+    <p id="appSubTitle">bringing the dog park online</p>
+    <!--  //--------------🦴 🦴 🦴 Goodest Boy 🦴 🦴 🦴--------------// -->
+    <div id="goodestDogDiv">
+      <img
+        src="https://media.giphy.com/media/CKj2cD4Le4gNm35vHc/giphy.gif"
+        alt="Breaking News Gif"
+        id="newsGif"
+      />
+      <h3 id="randomDogName"></h3>
+      <img id="imgRandom" />
     </div>
-    <div class="cardContainer">
-      <div class="imgCard">
-        <img id="imgRandom" />
-        <div class="likeNameContainer">
-          <h2 id="likes">0 Likes</h2>
-          <h2 id="dogName">@Poodle</h2>
-        </div>
-        <div class="barkComments">
-          <div>Nice Photo!</div>
-          <div>Where did you get that treat?</div>
-        </div>
-        <form class="form">
-          <label for="comment">Add a bark:</label><br />
-          <input
-            type="text"
-            id="comment"
-            name="comment"
-            placeholder="Insert Bark Here..."
-          /><br />
-          <input type="submit" id="submit-btn" />
-        </form>
-      </div>
+    <!--  //--------------🦴 🦴 🦴 User Profile Section 🦴 🦴 🦴--------------// -->
+    <div id="userProfileDiv">
+      <form>
+        <h4>Create Your Profile</h4>
+        <label for="image">Image:</label>
+        <input type="text" />
+        <label for="caption">Caption:</label>
+        <input type="text" />
+        <label for="name">Name:</label>
+        <input type="text" />
+        <label for="breed">Breed:</label>
+        <input type="text" />
+      </form>
     </div>
-
+    <!-- //--------------🦴 🦴 🦴 Friends Section 🦴 🦴 🦴--------------// -->
+    <div id="cardContainer"></div>
   </body>
 </html>
+
+<!-- <form class="form">
+      <label for="comment">Add a bark:</label><br />
+      <input
+        type="text"
+        id="comment"
+        name="comment"
+        placeholder="Insert Bark Here..."
+      /><br />
+      <input type="submit" id="submit-btn" />
+    </form> -->
+<!-- </body>
+</html> -->
+
+<!-- 
+<div class="headerContainer">
+  <h1 id="headerBark">Bark</h1>
+  <h2 id="dogOfDay">Goodest Dog of the Day</h2>
+</div> -->
+<!-- <div class="cardContainer">
+  <div class="imgCard">
+    <img id="imgRandom" />
+    <div class="likeNameContainer">
+      <h2 id="likes">0 Likes</h2>
+      <h2 id="dogName">@Poodle</h2>
+    </div>
+    <div class="barkComments">
+      <div>Nice Photo!</div>
+      <div>Where did you get that treat?</div>
+    </div>
+  </div>
+</div> -->
