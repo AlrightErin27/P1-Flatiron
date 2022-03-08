@@ -6,7 +6,7 @@ P1-Flatiron: Project 1, Flatiron School Software Engineering Live
 
 ### Goals:
 
-- Create an app that has stored data in a API JSON file (aka THE DOG API).
+- Create an app that has stored data in a API JSON file.
 - Utilize open source random dog generator (aka DOG API).
 - Reveal data from the API on page.
 - Create 3 main features on page (either on one page with no routes or via dynamic JS).
