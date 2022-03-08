@@ -1,8 +1,27 @@
+
+//   const imgRandom = document.querySelector("#imgRandom");
+
+function getRandomImg() {
+  const dogAPI = "https://dog.ceo/api/breeds/image/random";
+
+  fetch(dogAPI)
+    .then((res) => res.json())
+    .then(function (json) {
+      console.log(json);
+      const imageUrl = json.message;
+      imgRandom.src = imageUrl;
+    })
+    .catch((err) => console.log("ERROR️‍🔥:", err));
+}
+getRandomImg();
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   //console.log("Reading loud and clear! 📻");
 
   //--------------GOODEST DOG SECTION----------------------//
-  const imgRandom = document.querySelector("#imgRandom");
+  const imgRandom = document.querySelector("#img-random");
   const dogNameArr = [
     "Toby",
     "Oprah",
@@ -27,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "#random-dog-name"
   ).innerHTML = `${randomDogName} is the GOODEST DOG OF THE DAY!!!`;
 
-  function getRandomImg() {
+  function getRandomImgDay() {
     const dogAPI = "https://dog.ceo/api/breeds/image/random";
     fetch(dogAPI)
       .then((res) => res.json())
@@ -38,7 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .catch((err) => console.log("ERROR️‍🔥:", err));
   }
-  getRandomImg();
+  getRandomImgDay();
 
   //-----------------------------------------------------//
 });
+
