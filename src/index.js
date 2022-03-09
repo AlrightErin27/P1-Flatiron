@@ -1,4 +1,3 @@
-
 //--------------🦴 🦴 🦴 Goodest Dog of the Day Section 🦴 🦴 🦴--------------//
 //create var for html el to insert random pic from dog API into
 const imgRandom = document.querySelector("#imgRandom");
@@ -51,9 +50,10 @@ function getRandomImgDay() {
 getRandomImgDay();
 //--------------🦴 🦴 🦴 User Profile Section 🦴 🦴 🦴--------------//
 //get info from local API file db.json
-const localDogAPI = "http://localhost:3000/dogs/";
+const localDogAPI = "http://localhost:3000/dogs";
 const userProfileDiv = document.querySelector("#friendsDiv");
 const cardContainer = document.querySelector("#cardContainer");
+const form = document.getElementById("form");
 
 fetch(localDogAPI)
   .then((res) => res.json())
@@ -63,10 +63,42 @@ fetch(localDogAPI)
 //create form to input user's info
 
 //--------------🦴 🦴 🦴 Friends Section 🦴 🦴 🦴--------------//
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const newName = document.querySelector("#name").value;
+  const image = document.querySelector("#image").value;
+  const caption = document.querySelector("#caption").value;
+  let newDogObject = {
+    name: newName,
+    image: image,
+    caption: caption,
+    likes: 0,
+  };
+
+  console.log(newDogObject);
+
+  fetch("http://localhost:3000/dogs", {
+    method: "POST",
+    headers: {
+      "content-type": "applications/json",
+      // Accept: "applications/json",
+    },
+    body: JSON.stringify(newDogObject),
+  })
+    .then((res) => res.json())
+    .then(function (newDogObject) {
+      console.log(newDogObject);
+    });
+  displayDog(newDogObject);
+});
+
 //fxn to render dogs from local db
 function renderLocalDogs(dogs) {
   dogs.forEach(displayDog);
 }
+
 function displayDog(dog) {
   //creating individual local dog cards
   const localDogCard = document.createElement("div");
@@ -119,20 +151,22 @@ function displayDog(dog) {
     localDogCaption,
     barkContainer
   );
+
   return localDogCard;
 }
+// <<<<<<< HEAD
 
-fetch("http://localhost:3000/comments")
-  .then((res) => res.json())
-  .then(renderComments);
-function renderComments(object) {
-  let arr = [];
-  object.forEach(function (element) {
-    console.log(element.content);
-    arr.push(element.content);
-  });
-}
-=======
+// fetch("http://localhost:3000/comments")
+//   .then((res) => res.json())
+//   .then(renderComments);
+// function renderComments(object) {
+//   let arr = [];
+//   object.forEach(function (element) {
+//     console.log(element.content);
+//     arr.push(element.content);
+//   });
+// }
+// =======
 
 //   const imgRandom = document.querySelector("#imgRandom");
 
@@ -149,8 +183,6 @@ function getRandomImg() {
     .catch((err) => console.log("ERROR️‍🔥:", err));
 }
 getRandomImg();
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   //console.log("Reading loud and clear! 📻");
@@ -196,5 +228,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //-----------------------------------------------------//
 });
-
-
