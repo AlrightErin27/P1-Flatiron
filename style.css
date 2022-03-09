@@ -115,6 +115,7 @@ form {
   gap: 40px;
   padding: 2rem;
   margin: 0 2rem 0 2rem;
+  /* margin: 2rem auto; */
 }
 .localDogCard {
   background-color: white;
@@ -149,4 +150,61 @@ form {
 .bark-section {
   height: min-content;
   margin-bottom: 0px;
+}
+/* ---------------FROM JOSE COMMIT 3/9--------- */
+#headerBark {
+  font-family: "Lato", sans-serif;
+  font-size: 4rem;
+}
+.imgCard {
+  height: 60vh;
+  width: 250px;
+  background: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#dogOfDay {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 30vh;
+  padding: 20px;
+}
+#likes {
+  font-size: 1rem;
+}
+#dogName {
+  font-size: 1rem;
+}
+.likeNameContainer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  font-size: 0.7rem;
+}
+.form {
+  margin-top: 30px;
+}
+.form input {
+  margin-top: 10px;
+}
+.form label {
+  padding-top: 10px;
+}
+.barkContainer {
+  padding: 0;
+}
+.barkContainer p {
+  margin-top: 3px;
+}
+.localDogCard img {
+  width: 250px;
+  height: 200px;
 }
