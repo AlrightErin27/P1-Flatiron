@@ -43,6 +43,15 @@
       "comment": "Nice!",
       "caption": "Look at my new toy!",
       "likes": 20
+    },
+    {
+      "id": 5,
+      "name": "Romeo",
+      "breed": "Miniature Dachshund",
+      "image": "src/imgs/dog6.jpg",
+      "comment": "🐶",
+      "caption": "Jus bean smol",
+      "likes": 3
     }
   ],
   "comments": [
