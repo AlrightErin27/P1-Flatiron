@@ -26,6 +26,7 @@ const dogNameArr = [
   "Kimmy",
   "Grits",
   "Lady",
+  "Tator Tot",
 ];
 
 //var where random generated dog name is stored
