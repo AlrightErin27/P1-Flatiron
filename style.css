@@ -96,16 +96,28 @@ form {
   flex-direction: column;
   align-items: center; */
   font-size: 20px;
+  padding: 0 3rem 2rem 2rem;
 }
 
 /* //--------------🦴 🦴 🦴 Friends Section 🦴 🦴 🦴--------------// */
-#friendsDiv {
-  /* outline: 3px green solid; */
+#friendsOnlineText {
+  font-size: 2rem;
+}
+#onlineGif {
+  max-height: 2rem;
+}
+#cardContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: fit-content;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 2rem;
+  margin: 0 2rem 0 2rem;
 }
 .localDogCard {
   background-color: white;
-  outline: 3px yellow solid;
-  margin: 4rem;
 }
 .localDogPics {
   width: 250px;
@@ -113,60 +125,28 @@ form {
   border-radius: 20px;
   margin-bottom: 20px;
 }
-/* .imgCard {
-  height: 60vh;
-  width: 250px;
-  background: white;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-} */
-
-/* #dogOfDay {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  padding-bottom: 30px;
-} */
-
-/* .cardContainer {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-} */
-/* .headerContainer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-   height: 30vh;
-  padding: 20px; 
-} */
-/* #likes {
-  font-size: 1rem;
-} */
-/* #dogName {
-  font-size: 1rem;
-} */
-/* .likeNameContainer {
+.likeNameContainer {
   display: flex;
   justify-content: space-between;
   font-family: "Lato", sans-serif;
+  font-size: 0.7rem;
 }
-.form {
-  margin-top: 30px;
-}
-.form input {
-  margin-top: 10px;
-}
-.form label {
-  padding-top: 10px;
-} */
-
-/* .submit-btn {
+.submit-btn {
   font-family: "Lato", sans-serif;
 }
 #imgRandom {
   width: 250px;
   height: 250px;
-} */
+}
+.localDogCard {
+  max-height: 60vh;
+  width: 250px;
+  background: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bark-section {
+  height: min-content;
+  margin-bottom: 0px;
+}

@@ -52,6 +52,7 @@ getRandomImgDay();
 //get info from local API file db.json
 const localDogAPI = "http://localhost:3000/dogs";
 const userProfileDiv = document.querySelector("#friendsDiv");
+const cardContainer = document.querySelector("#cardContainer");
 
 fetch(localDogAPI)
   .then((res) => res.json())
@@ -70,30 +71,51 @@ function displayDog(dog) {
   const localDogCard = document.createElement("div");
   localDogCard.setAttribute("id", `${dog.id}`);
   localDogCard.setAttribute("class", "localDogCard");
+
   //adding local dog image
   const localDogImg = document.createElement("img");
   localDogImg.src = dog.image;
   localDogImg.alt = dog.image;
   localDogImg.setAttribute("class", "localDogPics");
+
+  //adding name and likes flexbox container
+
+  const likeNameContainer = document.createElement("div");
+  likeNameContainer.setAttribute("class", "likeNameContainer");
+
+  //adding local dog likes
+  const localDogLikes = document.createElement("h2");
+  localDogLikes.innerHTML = `${dog.likes} Likes`;
+
+  //adding local dog name
+  const localDogName = document.createElement("h2");
+  const dogName = dog.name;
+  localDogName.innerHTML = `@${dogName}`;
+
+  likeNameContainer.append(localDogLikes, localDogName);
+
   //adding local dog captions
   const localDogCaption = document.createElement("p");
   localDogCaption.innerHTML = dog.caption;
-  //adding local dog name
-  const localDogName = document.createElement("h3");
-  localDogName.innerHTML = dog.name;
-  //adding dog breed
-  const localDogBreed = document.createElement("p");
-  localDogBreed.innerHTML = dog.breed;
-  //adding local dog likes
-  const localDogLikes = document.createElement("button");
-  localDogLikes.innerHTML = `Likes: ${dog.likes}`;
 
-  friendsDiv.append(localDogCard);
+  //barks:
+  const barkContainer = document.createElement("div");
+  barkContainer.setAttribute("class", "barkContainer");
+  const barks = document.createElement("h3");
+  barks.setAttribute("class", "bark-section");
+  barks.textContent = "Barks:";
+  barkContainer.append(barks);
+
+  //bark comments list and container
+  const barkComments = document.createElement("p");
+  barkComments.textContent = dog.comment;
+  barkContainer.append(barkComments);
+
+  cardContainer.append(localDogCard);
   localDogCard.append(
     localDogImg,
+    likeNameContainer,
     localDogCaption,
-    localDogName,
-    localDogBreed,
-    localDogLikes
+    barkContainer
   );
 }

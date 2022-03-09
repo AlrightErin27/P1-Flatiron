@@ -5,45 +5,61 @@
       "name": "Fido",
       "breed": "German Shepard",
       "image": "src/imgs/dog1.jpg",
-      "caption": "My good side.",
-      "comment": "",
-      "likes": 2
+      "caption": "Chilling at my front porch.",
+      "likes": 20
     },
     {
       "id": 2,
       "name": "Lucky",
       "breed": "Golden Retriever",
       "image": "src/imgs/dog2.jpg",
-      "caption": "Selfie time!",
-      "comment": "",
-      "likes": 0
+      "comment": "lol yeah sure",
+      "caption": "My owner loves me.",
+      "likes": 20
     },
     {
       "id": 3,
       "name": "Leo",
       "breed": "Chow Chow",
       "image": "src/imgs/dog3.jpg",
-      "caption": "Ruff day",
-      "comment": "",
-      "likes": 11
+      "comment": "I think I saw one yesterday too.",
+      "caption": "Is that a squirrel???",
+      "likes": 20
     },
     {
       "id": 4,
       "name": "Rocko",
       "breed": "Pomeranian",
       "image": "src/imgs/dog4.jpg",
-      "caption": "Keeping fit!",
-      "comment": "",
-      "likes": 2
+      "comment": "Great photo!",
+      "caption": "Caught off guard lol.",
+      "likes": 20
     },
     {
       "id": 5,
       "name": "Honey",
       "breed": "Miniature Dachshund",
       "image": "src/imgs/dog5.jpg",
-      "caption": "Just chilling with my favorite toy.",
-      "comment": "",
-      "likes": 100
+      "comment": "Nice!",
+      "caption": "Look at my new toy!",
+      "likes": 20
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "imageId": 1,
+      "content": "What a cute dog!"
+    },
+    {
+      "id": 2,
+      "imageId": 1,
+      "content": "He's got a nose for bugs!"
+    },
+    {
+      "id": 3,
+      "imageId": 1,
+      "content": "Woof!"
     }
   ]
 }
