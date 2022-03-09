@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script defer type="text/javascript" src="src/index.js"></script>
+  </head>
+  <body>
+    <div id="goodest-dog-section">
+      <div class="headerContainer">
+        <h1 id="headerBark">Bark</h1>
+        <h2 id="dogOfDay">Goodest Dog of the Day</h2>
+      </div>
+      <div class="cardContainer">
+        <div class="imgCard">
+          <img id="imgRandom" />
+          <div class="likeNameContainer">
+            <h2 id="likes">0 Likes</h2>
+            <h2 id="dogName">@Poodle</h2>
+          </div>
+          <div class="barkComments">
+            <div id="random-dog-name">Nice Photo!</div>
+            <div>Where did you get that treat?</div>
+          </div>
+          <form class="form">
+            <label for="comment">Add a bark:</label><br />
+            <input
+              type="text"
+              id="comment"
+              name="comment"
+              placeholder="Insert Bark Here..."
+            /><br />
+            <input type="submit" id="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
