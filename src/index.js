@@ -51,7 +51,7 @@ function getRandomImgDay() {
 getRandomImgDay();
 //--------------🦴 🦴 🦴 User Profile Section 🦴 🦴 🦴--------------//
 //get info from local API file db.json
-const localDogAPI = "http://localhost:3000/dogs";
+const localDogAPI = "http://localhost:3000/dogs/";
 const userProfileDiv = document.querySelector("#friendsDiv");
 const cardContainer = document.querySelector("#cardContainer");
 
@@ -119,6 +119,18 @@ function displayDog(dog) {
     localDogCaption,
     barkContainer
   );
+  return localDogCard;
+}
+
+fetch("http://localhost:3000/comments")
+  .then((res) => res.json())
+  .then(renderComments);
+function renderComments(object) {
+  let arr = [];
+  object.forEach(function (element) {
+    console.log(element.content);
+    arr.push(element.content);
+  });
 }
 =======
 
